@@ -1,0 +1,22 @@
+{
+  "name": "url-dat",
+  "version": "1.0.0",
+  "description": "put files from urls into dat",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehand/url-dat.git"
+  },
+  "author": "Joe Hand <joe@joeahand.com> (http://joeahand.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joehand/url-dat/issues"
+  },
+  "homepage": "https://github.com/joehand/url-dat#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1"
+  }
+}
