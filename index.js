@@ -2,7 +2,10 @@ var pump = require('pump')
 var urlTar = require('url-tar')
 var tarDat = require('tar-dat')
 
-module.exports = function (urls, archive, cb) {
+module.exports = function (urls, archive, opts, cb) {
+  if (typeof opts === 'function') {
+    cb = opts
+  }
   // urls => dat
-  pump(urlTar(urls), tarDat(archive), cb)
+  pump(urlTar(urls, opts), tarDat(archive, opts), cb)
 }
