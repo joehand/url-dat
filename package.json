@@ -1,6 +1,6 @@
 {
   "name": "url-dat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "put files from urls into dat",
   "main": "index.js",
   "scripts": {
