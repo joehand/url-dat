@@ -6,7 +6,7 @@ var urlDat = require('.')
 test('puts urls into archive', function (t) {
   var drive = hyperdrive(memdb())
   var archive = drive.createArchive()
-  var urls = ['http://dat-data.com']
+  var urls = ['https://datproject.org']
 
   urlDat(urls, archive, function (err) {
     t.error(err)
@@ -16,7 +16,7 @@ test('puts urls into archive', function (t) {
       t.ok(archive.key.toString('hex'), 'has key')
       archive.get(0, function (err, entry) {
         if (err) throw err
-        t.ok(entry.name.indexOf('dat-data') > -1, 'gets entry')
+        t.ok(entry.name.indexOf('datproject') > -1, 'gets entry')
         t.end()
       })
     })
